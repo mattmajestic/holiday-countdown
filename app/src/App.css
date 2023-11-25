@@ -9,6 +9,8 @@ body {
   justify-content: center;
   height: 100vh;
   text-align: center;
+  font-size: 2em; /* Increase font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for depth */
 }
 
 label {
@@ -33,5 +35,5 @@ input[type="radio"]:not(:checked) + label {
 /* Christmas colors */
 .christmas {
   background-color: green;
-  color: red;
+  color: white; /* Change text color to white for better visibility */
 }
