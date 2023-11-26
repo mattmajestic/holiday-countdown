@@ -226,15 +226,40 @@
         </defs>
       </svg>
       <h2>Javascipt Comparisons 🍦</h2>
-      <p>Go to the 👉 to see the Holiday Countdown in major JS Frameworks </p>
+      <div class="divider" role="separator" aria-label="Divider"></div>
+      <div class="right-side">
+        <div class="pill-group">
+          <div *ngFor="let item of [
+            { title: 'ReactJS Review', review: 'Easy to get started with lots of documentation. ' },
+            { title: 'Svelte Review', review: 'The shorted of app code frameowrks largely using loops for UI elements' },
+            { title: 'Angular Framework', review: 'Most Complex File System but like the UI feel and Dev Exp' },
+          ]; let i = index" (click)="selectedTab = i">
+            <div class="pill">
+              <span>{{ item.title }}</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="14"
+                viewBox="0 -960 960 960"
+                width="14"
+                fill="currentColor"
+              >
+                <path
+                  d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+                />
+              </svg>
+            </div>
+            <p *ngIf="selectedTab === i">{{ item.review }}</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
         @for (item of [
-          { title: 'React Framework', link: 'https://angular.dev' },
-          { title: 'Svelte Framework', link: 'https://angular.dev/tutorials' },
-          { title: 'Angular Framework', link: 'https://angular.dev/tools/cli' },
+          { title: 'React App Demo', link: 'https://holiday-countdown-app.vercel.app' },
+          { title: 'Svelte App Demo', link: 'https://holiday-countdown-svelte.vercel.app' },
+          { title: 'Angular App Demo', link: 'https://js-comparisons.vercel.app/' },
         ]; track item.title) {
           <a
             class="pill"
