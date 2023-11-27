@@ -1,32 +1,23 @@
-# Holiday Countdown App 🎉
+# JavaScript Frameworks Comparison 🚀🎉🌟
 
-Count down the days until Thanksgiving and Christmas with this festive React app! 🦃🎄
+This repository is a comparative study of different JavaScript frameworks, namely React, Svelte, and Angular. Each framework is used to build a holiday countdown application, demonstrating their unique features and capabilities.
 
-## Features 🌟
+## Frameworks 🛠️
 
-- Countdown to the big celebrations!
-- Festive Design 🎅
+### React App Demo 🚀
 
-## Usage 🚀
+React's component-based architecture and state management are showcased in this demo.
 
-1. **Clone:**
-   - `git clone https://github.com/mattmajestic/holiday-countdown-app.git`
-   - `cd app`
+[![Deploy with Vercel](https://vercel.com/button)](https://holiday-countdown-app.vercel.app)
 
-2. **Install:**
-   - `npm install`
+### Svelte App Demo 🎉
 
-3. **Start:**
-   - `npm start`
-   - Open [http://localhost:3000](http://localhost:3000) in your browser.
+This demo highlights Svelte's reactivity and compile-time conversion of components into efficient imperative code that directly manipulates the DOM.
 
-## Customize Dates 🗓️
+[![Deploy with Vercel](https://vercel.com/button)](https://holiday-countdown-svelte.vercel.app)
 
-Customize countdown dates in `src/config.js`.
+### Angular App Demo 🌟
 
-## Deployment 🌐
+The Angular demo demonstrates its robustness, with features like two-way data binding and dependency injection.
 
-Vercel
-
-
-Happy holidays! 🦃🎅✨
+[![Deploy with Vercel](https://vercel.com/button)](https://js-comparisons.vercel.app/)
